@@ -17,9 +17,7 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
       "s3:GetObject"
     ]
 
-    resources = [
-      "arn:aws:s3:::example-cache/*"
-    ]
+    resources = var.resources
 
     condition {
       test     = "StringEquals"
