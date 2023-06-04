@@ -13,3 +13,7 @@ variable "cloudfront_id" {
 variable "condition_value" {
   type = list(any)
 }
+
+variable "resources" {
+  type = list(any)
+}
