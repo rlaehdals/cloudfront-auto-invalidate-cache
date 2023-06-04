@@ -21,7 +21,7 @@ variable "restrict_public_buckets" {
   type = bool
 }
 
-variable "versioning"{
+variable "versioning" {
   type = string
 }
 
@@ -30,7 +30,7 @@ variable "sse_algorithm" {
 }
 
 variable "tags" {
-  type = map
+  type = map(any)
 }
 
 variable "region" {

@@ -4,5 +4,5 @@ tags = {
   Terraform  = "true"
   Enviroment = "dev"
 }
-region = "ap-northeast-2"
+region      = "ap-northeast-2"
 price_class = "PriceClass_200"

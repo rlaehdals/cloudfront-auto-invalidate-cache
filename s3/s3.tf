@@ -1,8 +1,8 @@
 module "s3" {
-  source = "../../modules/s3"
+  source = "github.com/rlaehdals/terraform-archive/s3"
 
   bucket_name = var.bucket_name
-  acl    = var.acl
+  acl         = var.acl
 
   block_public_acls       = var.block_public_acls
   block_public_policy     = var.block_public_policy

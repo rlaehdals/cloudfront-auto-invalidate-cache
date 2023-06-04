@@ -1,15 +1,15 @@
-variable "bucket_id"{
+variable "bucket_id" {
   type = string
 }
 
-variable "region"{
+variable "region" {
   type = string
 }
 
-variable "cloudfront_id"{
+variable "cloudfront_id" {
   type = string
 }
 
-variable "condition_value"{
-  type = list
+variable "condition_value" {
+  type = list(any)
 }

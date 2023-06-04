@@ -14,17 +14,17 @@ data "aws_iam_policy_document" "allow_access_from_another_account" {
     effect = "Allow"
 
     actions = [
-        "s3:GetObject"
+      "s3:GetObject"
     ]
 
     resources = [
-        "arn:aws:s3:::example-cache/*"
-        ]
+      "arn:aws:s3:::example-cache/*"
+    ]
 
     condition {
-        test = "StringEquals"
-        variable = "AWS:SourceArn"
-        values = var.condition_value
+      test     = "StringEquals"
+      variable = "AWS:SourceArn"
+      values   = var.condition_value
     }
   }
 }

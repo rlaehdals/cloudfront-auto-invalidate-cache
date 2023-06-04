@@ -1,19 +1,19 @@
 variable "tags" {
-  type = map
+  type = map(any)
 }
 
 variable "region" {
   type = string
 }
 
-variable "domain_name"{
+variable "domain_name" {
   type = string
 }
 
-variable "origin_id"{
+variable "origin_id" {
   type = string
 }
 
-variable "price_class"{
+variable "price_class" {
   type = string
 }
